@@ -1,0 +1,71 @@
+run_diagnosis ./tmax_fail/158_fail/0.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/158_fail/0.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=6, CPU_time=0.01
+ Simulated : #failing_pat=1, #passing_pat=0, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=1, #passing_pat=0, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa1   DS   g_N362/ZN   (INV_X1)
+ sa0   --   g_N362/A   (INV_X1)
+ sa0   --   g_N613/Z   (BUF_X1)
+ sa0   --   g_N613/A   (BUF_X1)
+ sa0   --   g_N63/ZN   (AND2_X1)
+ sa0   --   g_N63/A1   (AND2_X1)
+ sa0   --   g_N63/A2   (AND2_X1)
+ sa0   --   g_N370/ZN   (INV_X1)
+ sa1   --   g_N370/A   (INV_X1)
+ sa0   --   g_N35/ZN   (INV_X1)
+ sa1   --   g_N35/A   (INV_X1)
+ sa1   --   g_N132/Z   (BUF_X1)
+ sa1   --   g_N132/A   (BUF_X1)
+ sa1   --   g_N548/ZN   (AND2_X1)
+ sa1   --   g_N44/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa1   DS   g_N497/Z   (BUF_X1)
+ sa1   --   g_N497/A   (BUF_X1)
+ sa1   --   g_N301/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa1   DS   g_N270/ZN   (INV_X1)
+ sa0   --   g_N270/A   (INV_X1)
+ sa1   --   g_N301/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa0   DS   g_N416/Z   (BUF_X1)
+ sa0   --   g_N416/A   (BUF_X1)
+ sa0   --   g_N125/ZN   (AND2_X1)
+ sa0   --   g_N125/A2   (AND2_X1)
+ sa0   --   g_N125/A1   (AND2_X1)
+ sa0   --   g_N128/ZN   (INV_X1)
+ sa1   --   g_N128/A   (INV_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa0   DS   N16   (_PO)
+ sa0   --   g_N16/Z   (BUF_X1)
+ sa0   --   g_N16/A   (BUF_X1)
+ sa0   --   g_N371/Z   (BUF_X1)
+ sa0   --   g_N371/A   (BUF_X1)
+ sa0   --   g_N100/ZN   (AND2_X1)
+ sa0   --   g_N100/A1   (AND2_X1)
+ sa0   --   g_N100/A2   (AND2_X1)
+ sa0   --   g_N590/ZN   (INV_X1)
+ sa1   --   g_N590/A   (INV_X1)
+ sa0   --   g_N105/ZN   (INV_X1)
+ sa1   --   g_N105/A   (INV_X1)
+ sa1   --   g_N200/Z   (BUF_X1)
+ sa1   --   g_N200/A   (BUF_X1)
+ sa1   --   g_N44/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=0>
+ sa1   DS   g_N548/A1   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/158_stil/1.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/158_stil/1.stil with 0 errors.
+ End reading 16 patterns, CPU_time = 0.00 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/158_fail/1.diag

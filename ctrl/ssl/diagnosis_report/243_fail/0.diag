@@ -1,0 +1,32 @@
+run_diagnosis ./tmax_fail/243_fail/0.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/243_fail/0.fail
+ #failing_pat=1, #failures=2, #defects=1, #faults=2, CPU_time=0.02
+ Simulated : #failing_pat=1, #passing_pat=8, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=1, #passing_pat=8, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=8>
+ sa1   DS   g_N148/ZN   (INV_X1)
+ sa0   --   g_N148/A   (INV_X1)
+ sa1   --   g_N202/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=8>
+ sa1   DS   g_N234/ZN   (INV_X1)
+ sa0   --   g_N234/A   (INV_X1)
+ sa0   --   g_N261/Z   (BUF_X1)
+ sa0   --   g_N261/A   (BUF_X1)
+ sa0   --   g_N250/ZN   (AND2_X1)
+ sa0   --   g_N250/A1   (AND2_X1)
+ sa0   --   g_N250/A2   (AND2_X1)
+ sa0   --   g_N196/ZN   (INV_X1)
+ sa1   --   g_N196/A   (INV_X1)
+ sa1   --   g_N593/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/243_stil/1.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/243_stil/1.stil with 0 errors.
+ End reading 10 patterns, CPU_time = 0.00 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/243_fail/1.diag

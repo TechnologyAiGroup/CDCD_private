@@ -1,0 +1,50 @@
+run_diagnosis ./tmax_fail/31_fail/all.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/31_fail/all.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=3, CPU_time=0.03
+ Simulated : #failing_pat=1, #passing_pat=28, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=1, #passing_pat=28, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa1   DS   g_N417/ZN   (INV_X1)
+ sa0   --   g_N417/A   (INV_X1)
+ sa0   --   g_N403/Z   (BUF_X1)
+ sa0   --   g_N403/A   (BUF_X1)
+ sa0   --   g_N421/ZN   (AND2_X1)
+ sa0   --   g_N421/A1   (AND2_X1)
+ sa0   --   g_N421/A2   (AND2_X1)
+ sa0   --   g_N117/ZN   (INV_X1)
+ sa1   --   g_N117/A   (INV_X1)
+ sa1   --   g_N364/Z   (BUF_X1)
+ sa1   --   g_N364/A   (BUF_X1)
+ sa1   --   g_N268/ZN   (AND2_X1)
+ sa1   --   g_N339/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa0   DS   N29   (_PO)
+ sa0   --   g_N29/Z   (BUF_X1)
+ sa0   --   g_N29/A   (BUF_X1)
+ sa0   --   g_N424/Z   (BUF_X1)
+ sa0   --   g_N424/A   (BUF_X1)
+ sa0   --   g_N521/ZN   (AND2_X1)
+ sa0   --   g_N521/A1   (AND2_X1)
+ sa0   --   g_N521/A2   (AND2_X1)
+ sa0   --   g_N538/ZN   (INV_X1)
+ sa1   --   g_N538/A   (INV_X1)
+ sa1   --   g_N389/Z   (BUF_X1)
+ sa1   --   g_N389/A   (BUF_X1)
+ sa1   --   g_N339/ZN   (AND2_X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=28>
+ sa1   DS   g_N58/ZN   (INV_X1)
+ sa0   --   g_N58/A   (INV_X1)
+ sa1   --   g_N268/A2   (AND2_X1)
+ ------------------------------------------------------------------------------
+set_patterns -external ./stil/320_stil/0.stil
+ Warning: Current external pattern set is now deleted. (M134)
+ End parsing STIL file ./stil/320_stil/0.stil with 0 errors.
+ End reading 5 patterns, CPU_time = 0.00 sec, Memory = 0MB
+set_messages -log ./diagnosis_report/320_fail/0.diag
