@@ -5,10 +5,10 @@ We have generated datasets named "x1" and "pair".
 > `python my_utils.py -c x1 pair (--type ssl msl and or dom fe)`  
 > Generate `./pic` folder and generate pictures
 
-> `python getlabel_ma.py -c x1 pair (--type ssl msl and or dom fe)` 
+> `python getlabel_ma.py -c x1 pair (--type ssl msl and or dom fe)`   
 > Generate `lables_ma.txt` in './pic/chip(X)/fault(Y)/(Z)_resp/'  
 
-> `python modify_label.py -c x1 pair (--type ssl msl and or dom fe) (-t 0.899999)`    
+> `python modify_label.py -c x1 pair (--type ssl msl and or dom fe) (-t 0.899999)`  
 > Modify the labels into 0/1  
 
 > `python buildDataset.py -c x1 pair (--type ssl msl and or dom fe)`  
